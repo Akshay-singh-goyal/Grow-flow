@@ -3,9 +3,6 @@ import {
   FaWhatsapp,
   FaGlobe,
   FaRobot,
-  FaBullhorn,
-  FaChartLine,
-  FaQrcode,
 } from "react-icons/fa";
 
 import { motion } from "framer-motion";
