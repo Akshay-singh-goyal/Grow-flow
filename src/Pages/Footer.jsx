@@ -31,25 +31,43 @@ const Footer = () => {
             Websites and Digital Marketing.
           </p>
 
-          <div className="social-links">
+         <div className="social-links">
+  <a
+    href="https://facebook.com/yourpage"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+  >
+    <FaFacebookF />
+  </a>
 
-            <a href="#">
-              <FaFacebookF />
-            </a>
+  <a
+    href="https://instagram.com/yourpage"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <FaInstagram />
+  </a>
 
-            <a href="#">
-              <FaInstagram />
-            </a>
+  <a
+    href="https://linkedin.com/company/yourcompany"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedinIn />
+  </a>
 
-            <a href="#">
-              <FaLinkedinIn />
-            </a>
-
-            <a href="#">
-              <FaYoutube />
-            </a>
-
-          </div>
+  <a
+    href="https://youtube.com/@yourchannel"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="YouTube"
+  >
+    <FaYoutube />
+  </a>
+</div>
 
         </div>
 
