@@ -1,11 +1,4 @@
 import { useEffect } from "react";
-import { motion } from "framer-motion";
-import {
-  ShieldCheck,
-  Globe,
-  Rocket,
-} from "lucide-react";
-
 import "./home.css";
 import Hero from "./Hero";
 import Services from "./Service";
