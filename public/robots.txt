@@ -6,4 +6,4 @@ Disallow: /admin/
 Disallow: /dashboard/
 Disallow: /login/
 
-Sitemap: https://growflow.in/sitemap.xml
+Sitemap: https://grow-flow-tau.vercel.app/sitemap.xml
