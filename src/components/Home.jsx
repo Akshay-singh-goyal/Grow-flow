@@ -9,7 +9,6 @@ import {
 import "./home.css";
 import Hero from "./Hero";
 import Services from "./Service";
-import ContactFloat from "../Pages/ContactFloat";
 import Ourwork from "../Pages/Ourwork";
 import TrustedCompanies from "../Pages/TrustedCompanies";
 import Industries from "../Pages/Industries";
