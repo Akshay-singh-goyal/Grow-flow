@@ -1,0 +1,141 @@
+.investment{
+
+padding:110px 8%;
+
+background:#fff;
+
+}
+
+.investmentHeading{
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.investmentHeading span{
+
+background:#EEF2FF;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+color:#5B3DF5;
+
+font-weight:600;
+
+}
+
+.investmentHeading h2{
+
+font-size:48px;
+
+margin:20px 0;
+
+color:#111827;
+
+line-height:1.2;
+
+}
+
+.investmentHeading p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:30px;
+
+color:#666;
+
+}
+
+.investmentGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.investmentCard{
+
+padding:40px 30px;
+
+background:white;
+
+border-radius:22px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.4s;
+
+text-align:center;
+
+border:1px solid #eee;
+
+}
+
+.investmentCard:hover{
+
+box-shadow:0 25px 60px rgba(91,61,245,.18);
+
+}
+
+.investmentIcon{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+background:linear-gradient(135deg,#5B3DF5,#8A6CFF);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+font-size:35px;
+
+color:white;
+
+margin-bottom:25px;
+
+}
+
+.investmentCard h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+color:#111827;
+
+}
+
+.investmentCard p{
+
+line-height:28px;
+
+color:#666;
+
+}
+
+@media(max-width:768px){
+
+.investmentHeading h2{
+
+font-size:36px;
+
+}
+
+}

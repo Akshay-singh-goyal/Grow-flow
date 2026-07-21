@@ -1,0 +1,435 @@
+/* ==========================================
+           FREE BUSINESS AUDIT
+========================================== */
+
+.audit{
+    width:100%;
+    padding:110px 8%;
+    background:linear-gradient(135deg,#f8fbff,#ffffff);
+    position:relative;
+    overflow:hidden;
+}
+
+.audit::before{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:#5B3DF515;
+    border-radius:50%;
+    top:-180px;
+    left:-150px;
+    filter:blur(100px);
+}
+
+.audit::after{
+    content:"";
+    position:absolute;
+    width:380px;
+    height:380px;
+    background:#00C6FF15;
+    bottom:-150px;
+    right:-120px;
+    border-radius:50%;
+    filter:blur(90px);
+}
+
+/* Container */
+
+.audit-container{
+
+display:grid;
+
+grid-template-columns:1.1fr .9fr;
+
+gap:70px;
+
+align-items:center;
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* Left */
+
+.audit-tag{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:#EEF2FF;
+
+color:#5B3DF5;
+
+font-weight:600;
+
+border-radius:50px;
+
+margin-bottom:22px;
+
+}
+
+.audit-left h2{
+
+font-size:48px;
+
+line-height:1.2;
+
+font-weight:700;
+
+color:#222;
+
+margin-bottom:22px;
+
+}
+
+.audit-left p{
+
+font-size:18px;
+
+line-height:32px;
+
+color:#666;
+
+margin-bottom:35px;
+
+}
+
+/* Checklist */
+
+.audit-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.audit-item{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+background:white;
+
+padding:18px 22px;
+
+border-radius:16px;
+
+box-shadow:0 12px 25px rgba(0,0,0,.06);
+
+transition:.35s;
+
+}
+
+.audit-item:hover{
+
+transform:translateX(10px);
+
+box-shadow:0 20px 35px rgba(91,61,245,.15);
+
+}
+
+.audit-item svg{
+
+color:#22C55E;
+
+font-size:20px;
+
+}
+
+/* ================= FORM ================= */
+
+.audit-form{
+
+background:rgba(255,255,255,.88);
+
+backdrop-filter:blur(18px);
+
+padding:40px;
+
+border-radius:30px;
+
+box-shadow:0 25px 50px rgba(0,0,0,.08);
+
+border:1px solid rgba(255,255,255,.5);
+
+}
+
+.audit-form h3{
+
+font-size:30px;
+
+margin-bottom:30px;
+
+color:#222;
+
+text-align:center;
+
+}
+
+.audit-form form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+/* Inputs */
+
+.audit-form input,
+.audit-form select,
+.audit-form textarea{
+
+width:100%;
+
+padding:16px 18px;
+
+border:1px solid #ddd;
+
+border-radius:14px;
+
+outline:none;
+
+font-size:15px;
+
+transition:.35s;
+
+background:#fff;
+
+}
+
+.audit-form input:focus,
+.audit-form select:focus,
+.audit-form textarea:focus{
+
+border-color:#5B3DF5;
+
+box-shadow:0 0 0 4px rgba(91,61,245,.12);
+
+}
+
+/* Button */
+
+.audit-form button{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+padding:18px;
+
+border:none;
+
+border-radius:14px;
+
+background:linear-gradient(90deg,#5B3DF5,#00C6FF);
+
+color:white;
+
+font-size:17px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.audit-form button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 18px 35px rgba(91,61,245,.25);
+
+}
+
+/* ================= STATS ================= */
+
+.audit-stats{
+
+margin-top:90px;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.audit-stats div{
+
+background:white;
+
+padding:35px;
+
+border-radius:24px;
+
+text-align:center;
+
+box-shadow:0 18px 35px rgba(0,0,0,.07);
+
+transition:.35s;
+
+}
+
+.audit-stats div:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 25px 45px rgba(91,61,245,.18);
+
+}
+
+.audit-stats svg{
+
+font-size:42px;
+
+margin-bottom:18px;
+
+color:#5B3DF5;
+
+}
+
+.audit-stats h3{
+
+font-size:38px;
+
+color:#222;
+
+margin-bottom:8px;
+
+}
+
+.audit-stats p{
+
+color:#666;
+
+font-size:16px;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:1100px){
+
+.audit-container{
+
+grid-template-columns:1fr;
+
+}
+
+.audit-form{
+
+margin-top:40px;
+
+}
+
+.audit-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.audit{
+
+padding:80px 20px;
+
+}
+
+.audit-left h2{
+
+font-size:34px;
+
+}
+
+.audit-left p{
+
+font-size:16px;
+
+line-height:28px;
+
+}
+
+.audit-form{
+
+padding:30px 22px;
+
+}
+
+.audit-form h3{
+
+font-size:24px;
+
+}
+
+.audit-stats{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.audit-left h2{
+
+font-size:28px;
+
+}
+
+.audit-tag{
+
+font-size:13px;
+
+}
+
+.audit-item{
+
+padding:15px;
+
+font-size:15px;
+
+}
+
+.audit-form button{
+
+font-size:15px;
+
+padding:16px;
+
+}
+
+.audit-stats h3{
+
+font-size:32px;
+
+}
+
+}

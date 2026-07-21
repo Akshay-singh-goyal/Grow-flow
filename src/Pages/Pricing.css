@@ -1,0 +1,430 @@
+/* ==========================================
+            PRICING SECTION
+========================================== */
+
+.pricing{
+    width:100%;
+    padding:110px 8%;
+    background:linear-gradient(180deg,#f8fbff,#ffffff);
+    position:relative;
+    overflow:hidden;
+}
+
+.pricing::before{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:#5B3DF515;
+    border-radius:50%;
+    top:-180px;
+    right:-150px;
+    filter:blur(90px);
+}
+
+.pricing::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#00C6FF15;
+    left:-120px;
+    bottom:-120px;
+    border-radius:50%;
+    filter:blur(90px);
+}
+
+/* ================= Heading ================= */
+
+.pricing-heading{
+    text-align:center;
+    margin-bottom:80px;
+    position:relative;
+    z-index:2;
+}
+
+.pricing-heading span{
+    display:inline-block;
+    padding:10px 24px;
+    background:#EEF2FF;
+    color:#5B3DF5;
+    border-radius:40px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.pricing-heading h2{
+    font-size:48px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.pricing-heading p{
+    max-width:720px;
+    margin:auto;
+    color:#666;
+    line-height:30px;
+    font-size:18px;
+}
+
+/* ================= Grid ================= */
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    position:relative;
+    z-index:2;
+}
+
+/* ================= Card ================= */
+
+.pricing-card{
+
+position:relative;
+
+background:rgba(255,255,255,.82);
+
+backdrop-filter:blur(18px);
+
+border-radius:28px;
+
+padding:45px 30px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+transition:.45s;
+
+overflow:hidden;
+
+border:1px solid rgba(255,255,255,.45);
+
+}
+
+.pricing-card:hover{
+
+transform:translateY(-15px);
+
+box-shadow:0 30px 60px rgba(91,61,245,.18);
+
+}
+
+/* Shine Effect */
+
+.pricing-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,.55),
+transparent
+);
+
+transition:.8s;
+
+}
+
+.pricing-card:hover::before{
+
+left:120%;
+
+}
+
+/* Active Card */
+
+.pricing-card.active{
+
+background:linear-gradient(180deg,#5B3DF5,#4C31D3);
+
+color:white;
+
+transform:scale(1.06);
+
+}
+
+.pricing-card.active h1,
+.pricing-card.active h3,
+.pricing-card.active p,
+.pricing-card.active li{
+
+color:white;
+
+}
+
+.pricing-card.active .plan-icon{
+
+background:white;
+
+color:#5B3DF5;
+
+}
+
+.pricing-card.active button{
+
+background:white;
+
+color:#5B3DF5;
+
+}
+
+/* Popular Badge */
+
+.popular{
+
+position:absolute;
+
+top:18px;
+
+right:-45px;
+
+background:#FFD54F;
+
+padding:10px 55px;
+
+transform:rotate(45deg);
+
+font-size:13px;
+
+font-weight:700;
+
+display:flex;
+
+align-items:center;
+
+gap:6px;
+
+color:#222;
+
+}
+
+/* Icon */
+
+.plan-icon{
+
+width:75px;
+
+height:75px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+border-radius:20px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:32px;
+
+background:linear-gradient(135deg,#5B3DF5,#00C6FF);
+
+color:white;
+
+box-shadow:0 15px 30px rgba(91,61,245,.25);
+
+}
+
+/* Title */
+
+.pricing-card h3{
+
+text-align:center;
+
+font-size:28px;
+
+margin-bottom:12px;
+
+color:#222;
+
+}
+
+.pricing-card h1{
+
+text-align:center;
+
+font-size:42px;
+
+color:#5B3DF5;
+
+margin-bottom:12px;
+
+font-weight:700;
+
+}
+
+.pricing-card p{
+
+text-align:center;
+
+margin-bottom:30px;
+
+color:#666;
+
+}
+
+/* List */
+
+.pricing-card ul{
+
+list-style:none;
+
+display:flex;
+
+flex-direction:column;
+
+gap:16px;
+
+margin-bottom:35px;
+
+}
+
+.pricing-card ul li{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+font-size:16px;
+
+color:#444;
+
+}
+
+.pricing-card ul li svg{
+
+color:#22C55E;
+
+font-size:18px;
+
+}
+
+/* Button */
+
+.pricing-card button{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+border-radius:14px;
+
+background:linear-gradient(90deg,#5B3DF5,#00C6FF);
+
+color:white;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.pricing-card button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 35px rgba(91,61,245,.25);
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:1200px){
+
+.pricing-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.pricing{
+
+padding:80px 20px;
+
+}
+
+.pricing-heading h2{
+
+font-size:34px;
+
+}
+
+.pricing-heading p{
+
+font-size:16px;
+
+}
+
+.pricing-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.pricing-card.active{
+
+transform:none;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.pricing-heading h2{
+
+font-size:28px;
+
+}
+
+.pricing-card{
+
+padding:35px 22px;
+
+}
+
+.pricing-card h1{
+
+font-size:36px;
+
+}
+
+.plan-icon{
+
+width:65px;
+
+height:65px;
+
+font-size:28px;
+
+}
+
+}
