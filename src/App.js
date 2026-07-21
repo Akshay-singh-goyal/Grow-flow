@@ -19,6 +19,8 @@ import RealEstate from "./Pages/Realstate/RealEstate";
 
 import Footer from "./Pages/Footer";
 
+import Analytics from "./components/Analytics";
+
 // import BlogPage from "./pages/Blog/BlogPage";
 
 // import CaseStudiesPage from "./pages/CaseStudies/CaseStudiesPage";
@@ -119,6 +121,7 @@ function App() {
           element={<BusinessGrowth />}
 
         /> */}
+         <Analytics />
 
       </Routes>
       <Footer/>
